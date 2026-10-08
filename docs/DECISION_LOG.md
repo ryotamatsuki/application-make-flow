@@ -23,3 +23,27 @@
 ## W005 — 2026-10-08 — Automated internal-consistency check
 
 **Decision**: Standard-library Python check of relative Markdown links and required Stage definitions will run as lightweight CI. It is a documentation integrity test, not a certificate of competition eligibility, real-data correctness or product safety.
+
+## W006 — 2026-10-08 — Profile-specific correctness and comparative value
+
+**Problem**: A format-only visualization kill and universal positive/negative/UNKNOWN expectations bias the workflow toward feasibility calculators. User validation occurs late, and useful differences can remain qualitative.
+
+**Decision**: Add DECISION_SUPPORT, ANALYSIS and VISUALIZATION profiles. Require early user screening before selection and matched baseline tasks plus OD contribution at Stage 07. Allow different correctness references while keeping real data, missing-data honesty and independent verification mandatory.
+
+## W007 — 2026-10-08 — Bounded experiments and task-level iteration
+
+**Decision**: Test the biggest unresolved assumption cheaply before detailed investment; permit bounded Stage 01–03 discovery loops and Stage 09/10 task iterations. Scope changes still follow rollback rules. Early-user gaps permit recruitment and bounded experiments only; unverified Stage 07 value blocks Core Freeze.
+
+## W008 — 2026-10-08 — Separate readiness, receipt and operation
+
+**Problem**: The submission template required completed submission inside pre-submission hard checks.
+
+**Decision**: READY needs completed pre-submission checks; SUBMITTED additionally needs a receipt. Record operation costs, owners, data expiry, update failure and recovery for the required public period. Five-minute demos remain an internal preparation target, not an official hearing duration.
+
+## W009 — 2026-10-08 — Project evidence consistency, not automatic certification
+
+**Decision**: A standard-library checker validates local evidence hashes, input versions, dependency revisions, dates and conditional work limits. It rejects empty GO records and stale supporting evidence; human signoff and claim validity still require review. The workflow repository ships templates and regression tests, not fabricated app evidence.
+
+## W010 — 2026-10-08 — Release as v2.0.0
+
+**Reason**: Existing governance classifies Stage meaning and routing changes as MAJOR. New profiles and permitted early/iterative work change both. Keep Stage 00–12 IDs; migrate active v1 projects by reassessing affected evidence only.

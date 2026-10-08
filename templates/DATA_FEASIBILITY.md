@@ -1,6 +1,6 @@
 # Data Feasibility, License and Semantic Audit
 
-**Candidate ID / core decision:**  
+**Candidate ID / core task / validation profile:**
 **Snapshot date:**  
 **Dataset owners, official source URLs and dates:**
 
@@ -24,6 +24,9 @@ Status vocabulary: `ACQUIRED` / `PARTIAL` / `UNAVAILABLE` (e.g. 403) / `NOT FOUN
 - [ ] ZIP safety and required files/foreign keys validated (stops, routes, trips, stop_times, calendar service semantics)
 - [ ] Service date, holidays and exceptions handled; time values >24h supported when present
 - [ ] Feed validity period checked, not inferred from fetch date
+- [ ] pickup_type/drop_off_type boarding restrictions and advance-contact requirements checked when applicable
+- [ ] frequencies.txt and exact_times handled when applicable; headway-based service not silently expanded into guaranteed departure times
+- [ ] Approximate timepoint values reflected in claim precision when applicable
 - [ ] Transfers, parent stations, walking access, maximum walk distance explicitly supported or marked as assumptions
 - [ ] GTFS-RT applied only with freshness, identity mapping, missing-alert fallback and API permission confirmed
 - [ ] GTFS-Flex (if used) reservation, service eligibility and geographical/time conditions validated; no fabricated fixed departure
@@ -31,12 +34,25 @@ Status vocabulary: `ACQUIRED` / `PARTIAL` / `UNAVAILABLE` (e.g. 403) / `NOT FOUN
 - [ ] Public display of reconstructed raw timetables/converted transit JSON independently license-reviewed
 - [ ] Attribution and user-visible data scope/refresh status decided
 
+## Coverage and update contract
+
+| Required region/day/time/user condition | Representative case | Actual usable input | Missing or excluded condition | Evidence |
+|---|---|---|---|---|
+| NOT DEFINED | — | NOT TESTED | UNKNOWN | — |
+
+- Input version/hash, checked-at and valid-until per source:
+- Update owner and frequency; freshness threshold:
+- Failed update / expired input display and recovery:
+- Public availability period and source termination plan:
+- Non-applicable semantic checks and reason (not an unexplained checkbox):
+
 ## Minimum real case (Stage 05 contract)
 
 - Inputs (origin, destination, date, constraints): 
-- Expected positive scenario, justified by source:
-- Expected negative scenario, justified by source:
-- Expected UNKNOWN scenario and fallback UI:
+- DECISION_SUPPORT: expected positive, negative and UNKNOWN scenarios with source justification:
+- ANALYSIS: independently checkable aggregation, condition change and missing-data scenario:
+- VISUALIZATION: source-to-display comparison, reading task/misreading condition and missing-data scenario:
+- Selected cases, non-applicable profiles and fallback UI:
 - Necessary third-party fields and any assumed duration:
 - Script/commit/manifest SHA for reproduction:
 - Reliability boundaries, no inference outside them:

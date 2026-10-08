@@ -19,3 +19,7 @@ jobs:
           python-version: "3.12"
       - name: Validate documentation contract
         run: python scripts/check_workflow.py
+      - name: Test evidence consistency rejection behavior
+        run: python -m unittest discover -s tests -v
+      - name: Validate the unevaluated template without inventing project GO
+        run: python scripts/check_project.py templates/PROJECT_STATE.json --root .

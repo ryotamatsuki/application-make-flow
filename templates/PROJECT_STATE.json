@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "project": "",
+  "workflow_version": "2.0.0",
+  "workflow_sha": "",
+  "profiles": [],
+  "inputs": [],
+  "stages": [
+    {
+      "id": "00",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "01",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "02",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "03",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "04",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "05",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "06",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "07",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "08",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "09",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "10",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "11",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    },
+    {
+      "id": "12",
+      "status": "NOT EVALUATED",
+      "revision": 0,
+      "depends_on": {},
+      "input_versions": {},
+      "evidence": [],
+      "checked_at": "",
+      "valid_until": "",
+      "reviewer": {
+        "name": "",
+        "kind": ""
+      },
+      "authorization": "",
+      "blockers": [],
+      "conditions": [],
+      "authorization_kind": ""
+    }
+  ],
+  "submission": {
+    "state": "NOT READY",
+    "ready_stage_revision": null,
+    "submitted_at": "",
+    "receipt": []
+  }
+}

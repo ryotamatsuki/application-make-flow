@@ -3,18 +3,21 @@
 ## Exploration setup
 
 - Discovery period and evidence sources:
-- Users and decisions being searched:
+- Users and tasks being searched:
 - Candidate budget (count or hours) and stop condition (precommit):
 - Scope boundaries / what would be off-topic:
 - Current evidence maturity:
+- Validation profiles (DECISION_SUPPORT / ANALYSIS / VISUALIZATION):
+- Early user screen: participants, recruitment method, rough screen/task, evidence:
+- Biggest unresolved assumption per candidate, consequence, smallest experiment, cost and stop condition:
 - Research owner / actual date / workflow SHA:
 - Official contest relevance: [COMPETITION_RULES](../COMPETITION_RULES.md)
 
 ## Structural deduplication
 
-候補は名称ではなく、`user → constraint → public transport data → calculation → decision/action` で同定する。単なる地図テーマ・対象エリア・ブランド名の違いなら同一案を検討。
+候補は名称ではなく、`user → task/constraint → public transport data → processing → decision/understanding/experience` で同定する。単なる地図テーマ・対象エリア・ブランド名の違いなら同一案を検討。
 
-| ID | User and actual decision | Problem evidence (official/observed/hypothesis) | Essential OD data and acquisition status | Calculated decision/outcome | Strongest substitute | Difference / falsification test | Disposition & why |
+| ID | User and actual task | Problem evidence (official/observed/hypothesis) | Essential OD data and acquisition status | Decision/understanding/experience enabled | Strongest substitute | Difference / falsification test | Disposition & why |
 |---|---|---|---|---|---|---|---|
 | C-001 | NOT EVALUATED | — | — | — | — | — | UNSCREENED |
 
@@ -22,7 +25,10 @@ Disposition: `ACTIVE` / `MERGED INTO C-...` / `REJECTED` / `DEFERRED` / `SELECTE
 
 ## Selection memo (Stage 04)
 
-- Selected candidate ID and unique user decision:
+- Selected candidate ID, target task and validation profile:
+- Early user-screen evidence and observed misunderstandings:
+- Biggest unresolved assumption and minimal experiment result:
+- Matched baseline task, metric and predeclared success criterion:
 - Top alternatives and **specific** reasons for nonselection:
 - Evidence that the proposed user problem is real:
 - Source data that was **actually downloaded and parsed**, with version:
@@ -31,7 +37,9 @@ Disposition: `ACTIVE` / `MERGED INTO C-...` / `REJECTED` / `DEFERRED` / `SELECTE
 - Time/budget/complexity ceiling, stop rule:
 - Principal data/license/technical/safety blockers:
 - Independent-verification design (separate logic):
-- Definition of success: positive, negative and UNKNOWN cases:
+- Profile-specific correctness cases and missing/UNKNOWN case:
+- OD contribution comparison plan:
+- Recruitment gap and bounded conditional action, if any:
 - Human signoff / timestamp / `GO` verdict:
 - Conditions under which a rejected candidate can be reopened:
 
@@ -39,5 +47,7 @@ Disposition: `ACTIVE` / `MERGED INTO C-...` / `REJECTED` / `DEFERRED` / `SELECTE
 - Was an idea preferred because development was already underway?
 - Was the candidate chosen because an attractive API, framework or 3D technique was available?
 - Are competitor claims based on actual usage or marketing summaries only?
-- Does the proposed feature affect a user decision, not just a visualization?
+- Does the proposed feature affect a user decision, understanding or useful experience, with evidence?
 - Has mandatory ODPT/GTFS-type data been verified, rather than assumed?
+
+Initial user screening is not proof of finished-product effectiveness. If missing, Stage 04 permits recruitment and bounded experiments only under CONDITIONAL GO; no final Stage 07 GO or Core Freeze without value evidence.

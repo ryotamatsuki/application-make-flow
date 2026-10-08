@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.0 — 2026-10-08 — Comparative value and iterative delivery
+
+- Added validation profiles for decision support, analysis and visualization; removed format-only visualization rejection.
+- Required early user screening before selection, bounded tests of the biggest unresolved assumption, matched baseline tasks and OD contribution evidence.
+- Allowed bounded discovery loops and task-level build/UX iterations with explicit rollback and stale evidence rules.
+- Added conditional GTFS boarding, headway and approximate-time checks, coverage and update contracts, and operations rehearsals.
+- Split pre-submission READY checks from post-submission receipt checks.
+- Added reusable planning, comparison, iteration, operations and project-state templates; added an evidence consistency checker with regression tests.
+- MAJOR under the existing governance rule because gate meanings and permitted routing change. Stage numbering remains 00–12; existing projects reassess affected evidence only. No candidate, app or entry was created by this release.
+
 ## v1.0.0 — 2026-10-08 — Initial greenfield competition workflow
 
 - Introduced strict official contest eligibility ledger and source hierarchy.

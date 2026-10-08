@@ -3,7 +3,7 @@
 このリポジトリは公共交通オープンデータチャレンジ2026**専用**の**新規アプリ制作手順**であり、特定作品のコードベースではない。作業開始時は `GOVERNANCE.md` → `COMPETITION_RULES.md` → `WORKFLOW.md` → 対象Stageテンプレートを読む。
 
 1. ユーザーから明示されない限り、CareTrip、レジリエンス分析など**既存案の優先・移植・勝者認定をしない**。
-2. 現実課題とユーザー意思決定を先に定義。技術選好を根拠にアプリを決定しない。
+2. 現実課題と利用者の判断、理解、利用体験を先に定義。技術選好を根拠にアプリを決定しない。
 3. 現在Stage、前段`GO`証拠、Stageの目的、固定入力、禁止事項、今回の最大作業範囲、納品物、次の判断を明確にする。
 4. 必須データと規約は公式資料・実取得で検証。権利・欠損・有効期間が未確認なら自動でPASSにしない。
 5. 先行サービスの機能・利用者タスク・出力の実際を比較。表面的な名称差分を新規性としない。
@@ -18,8 +18,15 @@
 14. 提案時・完成時とも公式4審査観点への実質寄与を評価。推奨追加データは証拠ある有用性で選択。
 15. 既存作品リポジトリとの共有は再利用可能な知見のみ。既存作品の特性を汎用必須仕様へ昇格しない。
 
+16. 検証種別（DECISION_SUPPORT / ANALYSIS / VISUALIZATION）を選び、可視化だけを理由に棄却しない。複合作品は全ての核心主張を検証。
+17. Stage 04までに初期試用を記録。未実施なら募集と限定実証のCONDITIONAL GOのみ。Stage 07の価値比較が未確認ならCore Freezeへ進まない。
+18. 最大の未確認事項と最小実験を事前定義。既存手段との同等タスク比較、OD寄与、実施順序と標本の限界を記録する。
+19. Stage 09/10はタスク単位で実装、試用、修正を反復。コア仕様とデータ意味論の変更は該当Stageへ戻す。
+20. 作品側のPROJECT_STATEで入力版、前段revision、証拠ハッシュ、有効期限を検査。PASSを人間承認や実ユーザー効果の認証と呼ばない。
+21. 更新失敗、期限切れ、復旧、開催期間中の公開費用を運用計画で検証。READYに提出済みの証拠を要求しない。
+
 ### Handoff output (every Stage)
-`Stage / Verdict / Evidence links / Blockers / Counterexamples / Immutable inputs / Allowed next action / Rollback target / Product repo SHA if applicable`
+`Stage / Verdict / Evidence links / Blockers / Counterexamples / Immutable inputs / Allowed next action / Rollback target / Product repo SHA if applicable / Validation profile / Biggest unresolved assumption / Baseline comparison / State revision`
 
 ### Do not
 - 理論論文の証明／学術誌投稿手続きをアプリの必須手続として輸入する。

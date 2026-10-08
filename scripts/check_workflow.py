@@ -2,6 +2,7 @@
 """Check structural integrity of the contest-specific documentation (not product QA)."""
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -25,6 +26,14 @@ REQUIRED = [
     "templates/INDEPENDENT_VALIDATION.md",
     "templates/PRODUCT_SPEC.md",
     "templates/SUBMISSION_QA.md",
+    "templates/VALIDATION_PLAN.md",
+    "templates/USER_COMPARISON.md",
+    "templates/ITERATION_LOG.md",
+    "templates/OPERATIONS_PLAN.md",
+    "templates/PROJECT_STATE.json",
+    "docs/PROJECT_EVIDENCE_CHECK.md",
+    "scripts/check_project.py",
+    "tests/test_project_evidence.py",
 ]
 LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)\s]+)(?:\s+[^)]*)?\)")
 STAGE = re.compile(r"(?m)^## Stage (\d{2}) — ")
@@ -71,6 +80,28 @@ def check() -> list[str]:
         if file.exists() and "2027-01-11" not in file.read_text(encoding="utf-8"):
             errors.append(f"official deadline absent in {path}")
 
+    for path, marker in (
+        ("README.md", "**Version:** 2.0.0"),
+        ("WORKFLOW.md", "**v2.0.0 /"),
+        ("GOVERNANCE.md", "Workflow v2.0.0"),
+        ("docs/START_NEW_PROJECT.md", "v2.0.0"),
+        ("docs/CHANGELOG.md", "## v2.0.0"),
+    ):
+        file = ROOT / path
+        if file.exists() and marker not in file.read_text(encoding="utf-8"):
+            errors.append(f"current workflow version missing in {path}")
+
+    state_path = ROOT / "templates/PROJECT_STATE.json"
+    if state_path.exists():
+        try:
+            state = json.loads(state_path.read_text(encoding="utf-8"))
+            if state.get("workflow_version") != "2.0.0" or any(s["status"] != "NOT EVALUATED" for s in state["stages"]):
+                errors.append("state template must be v2.0.0 and wholly NOT EVALUATED")
+            if state.get("inputs") or state.get("submission", {}).get("state") != "NOT READY":
+                errors.append("state template must not contain actual input/entry claims")
+        except (ValueError, KeyError, TypeError, AttributeError):
+            errors.append("invalid PROJECT_STATE template")
+
     return errors
 
 
@@ -80,5 +111,5 @@ if __name__ == "__main__":
         for p in problems:
             print("FAIL:", p)
         sys.exit(1)
-    print("PASS: required files, relative links, stage 00-12 headings and deadline markers")
+    print("PASS: required files, links, Stage 00-12, deadline, v2.0.0 markers and unevaluated template")
     print("NOTE: This does not verify data validity, API licensing, product correctness, or submission.")
